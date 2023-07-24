@@ -1,0 +1,150 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+img {
+    max-width: 100%;
+}
+
+.mobilepic {
+    border-radius: 20px 20px 0 0;
+}
+
+.desktoppic {
+    display: none;
+}
+
+.pricecard { 
+    width: 90%;
+    margin: 2em auto 2em auto;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 20px;
+    max-width: 600px;
+}
+
+.content {
+    padding: 1em 1em;
+    max-width: 500px;
+}
+
+.intro {
+    letter-spacing: 0.4em;
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.4em;
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+}
+
+.text {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.price {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+.discountedprice {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-right: 0.4em;
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', serif;
+}
+
+.slashedprice {
+    text-decoration: line-through;
+    margin-top: 0.9em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    padding:1em; 
+    background-color: hsl(158, 36%, 37%);
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 1em;
+    font-size: 1.2rem;
+    color:  hsl(0, 0%, 100%);
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+}
+
+.carticon {
+    margin-right: 0.5em;
+}
+
+.graycolormod {
+    color: hsl(228, 12%, 48%);
+}
+
+@media (min-width:600px) {
+    .pricecard {
+        display: flex;
+        max-width: 500px;
+        margin-top: 10em;
+    }
+
+    .mobilepic {
+        display: none;
+    }
+
+    .desktoppic {
+        display: block; 
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .img {
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 50%;
+    }
+
+    .content {
+        width:50%;
+    }
+
+    .intro {
+        font-size: 0.5rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .text {
+        font-size: 0.8rem;
+        line-height: 1.6em;
+    }
+
+    .discountedprice {
+        font-size: 2rem;
+    }
+
+    .slashedprice {
+        margin-top: 1.4em;
+        font-size: 0.6rem;
+    }
+
+    .button {
+        font-size: 1rem;
+    }
+} 
